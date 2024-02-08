@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroBazaar</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS-стилей -->
+</head>
+<body>
+    <h1>Продажа авиабилетов</h1>
+    <style>
+        /* CSS для центрирования заголовка */
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <!-- Форма для ввода информации о продаже билета -->
+    <form id="ticketForm">
+        <label for="destination">Пункт назначения:</label>
+        <input type="text" id="destination" name="destination" required>
+        <label for="price">Цена:</label>
+        <input type="number" id="price" name="price" required>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <button type="submit">Продать билет</button>
+    </form>
+    
+    <!-- Таблица для отображения проданных билетов -->
+    <table id="ticketTable">
+        <thead>
+            <tr>
+                <th>Пункт назначения</th>
+                <th>Цена</th>
+                <th>Количество</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Здесь будут отображаться данные о проданных билетах -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+     <!-- Подключение JavaScript -->
+</body>
+</html>
